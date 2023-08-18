@@ -8,13 +8,3 @@ elif opcao == 3:
     print('Você escolheu Laranja.') 
 else:
     print('Opção inválida.')          
-
-    contador = 1 
-
-while contador <= 5:
-    print("Contador:",contador)
-    contador = contador + 1
-
-for conrtador in range(1, 6):
-    print('Contador:', contador)    
-    
