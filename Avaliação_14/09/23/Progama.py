@@ -27,3 +27,4 @@ botao_enviar = tk.Button(root, text="Enviar", command=enviar_mensagem)
 botao_enviar.pack()
 
 root.mainloop()
+# Ryan alves de oliveira lopes tentei bunquei infomações na internet 
