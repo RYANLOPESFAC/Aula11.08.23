@@ -2,15 +2,11 @@ import tkinter as tk
 from tkinter import messagebox
 
 def enviar_mensagem():
-    nome = entry_nome.get()
-    mensagem = entry_mensagem.get() 
+    nome = str (arroz_nome.get())
+    mensagem = str (enviar_mensagem.get()) 
     if nome and mensagem:
         nova_janela = tk.Toplevel(root)
         nova_janela.title("Mensagem Enviada")
-        label_nome = tk.Label(nova_janela, text=f"Nome: {nome}")
-        label_nome.pack()
-        label_mensagem = tk.Label(nova_janela, text=f"Mensagem: {mensagem}")
-        label_mensagem.pack()
     else:
         messagebox.showerror("Erro", "Por favor, preencha todos os campos!")
 
@@ -19,8 +15,8 @@ root.title("Envio de Mensagem")
 
 label_nome = tk.Label(root, text="Nome:")
 label_nome.pack()
-entry_nome = tk.Entry(root)
-entry_nome.pack()
+arroz_nome = tk.Entry(root)
+arroz_nome.pack()
 
 
 botao_enviar = tk.Button(root, text="Enviar", command=enviar_mensagem)
